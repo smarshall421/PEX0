@@ -17,30 +17,45 @@
 * @pre the user must pass in a string
 * @post this functions will have changed every occurance of ' ' to - and every 't' and 'T' to ' '
 */
-void parseIt (char *string) {
+void parseIt(char *string)
+{
 
     int length = length(string);
 
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++)
+    {
 
-        if (string[i] == ' ') {
+        if (string[i] == ' ')
+        {
 
             string[i] = '-';
-
         }
 
-        else if (string[i] == 't') {
+        else if (string[i] == 't')
+        {
 
             string[i] == ' ';
-
         }
 
-        else if (string[i] == 'T') {
+        else if (string[i] == 'T')
+        {
 
             string[i] == ' ';
-
         }
-
     }
+}
 
+/** modifyIt
+* @brief this function will take in a string and return a pointer to the string
+* @param string is the character array for the passed in string
+* @return will return a pointer to the string 
+* @pre the user must pass in a string that is within the normal bounds
+* @post the result will be a pointer without NULL
+*/
+char **modifyIt(char *string)
+{
+
+    char **stringPtr = &string;
+
+    return stringPtr;
 }

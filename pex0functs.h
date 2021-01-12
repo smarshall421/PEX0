@@ -11,7 +11,6 @@
 #define PEX00FUNCTS_H
 #include <stdlib.h>
 
-
 /**
 * @brief provide a description of what the function does; it’s intended purpose (not how it does it
     but what it is for)
@@ -23,7 +22,6 @@
     will be true as a result of calling the method
 */
 
-
 /** parseIt
 * @brief this function takes in a string and does nothing with it
 * @param string is the char array for the input parameter
@@ -31,7 +29,7 @@
 * @pre the user must pass in a string
 * @post this functions will have changed every occurance of ' ' to - and every 't' and 'T' to ' '
 */
-void parseIt (char *string);
+void parseIt(char *string);
 
 /** modifyIt
 * @brief this function will take in a string and return a pointer to the string
@@ -40,16 +38,6 @@ void parseIt (char *string);
 * @pre the user must pass in a string that is within the normal bounds
 * @post the result will be a pointer without NULL
 */
-char** modifyIt (char *string) {
-
-    char **stringPtr = &string;
-
-    return stringPtr;
-
-}
-
-
-
-
+char **modifyIt(char *string);
 
 #endif // PEX00FUNCTS_H
